@@ -1,3 +1,4 @@
+// task1.js file
 document.addEventListener("DOMContentLoaded", function () {
     // Function to update the current UTC time in milliseconds
     function updateUTCTime() {
@@ -12,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(updateUTCTime, 1000);
 
     // Update the current day of the week
-    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const daysOfWeek = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"];
     const today = new Date();
     const dayOfWeek = daysOfWeek[today.getUTCDay()];
     document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = dayOfWeek;
