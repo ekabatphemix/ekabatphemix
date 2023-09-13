@@ -1,17 +1,17 @@
-/* css file */
 body {
-    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    font-family:sans-serif;
     text-align: center;
-    background-color: aquamarine;
 }
-
 img {
     max-width: 200px;
-    border-radius: 150px;
+    border-radius: 50%;
 }
-
-body p {
+p{
     font-size: 20px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    font-size: 25px;
+    font-weight: bold;
 }
