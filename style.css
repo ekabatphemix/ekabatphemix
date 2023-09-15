@@ -1,4 +1,4 @@
- body {
+body {
     font-family: Arial, sans-serif;
     background-color: #e6f7ff; /* Light blue background color */
     margin: 0;
@@ -17,9 +17,10 @@ header h1 {
 }
 
 input[type="text"] {
-    width: 100%;
+    width: 80%;
     padding: 10px;
-    margin: 10px 0; 
+    margin: 10px 0;
+    border-radius: 10px;
 }
 
 main {
@@ -33,6 +34,14 @@ main {
     grid-template-columns: repeat(3, 1fr); /* Display three movies per row */
     gap: 20px;
 }
+#showSavedMoviesButton { 
+    width: 80%;
+    font-size: 35px;
+    text-emphasis:30px ;
+    background-color: aquamarine;
+    border-radius: 10px;
+
+}
 
 /* Style for movie cards */
 .movie-card {
@@ -43,7 +52,6 @@ main {
     margin: 1rem;
     border-radius: 3px;
     box-shadow: rgba(0, 0, 0, 0.1);
-    background-color: var(--secondary-color);
     position: relative;
     overflow: hidden;
 }

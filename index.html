@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MovieBox</title>
+    <title>Movie Discovery</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>MovieBox</h1>
-        <input type="text" id="searchInput" placeholder="Search for movies...">
+        <h1 data-test-id="movie-box-title">MovieBox</h1>
+        <button id="showSavedMoviesButton" data-test-id="show-saved-movies">CLICK here to ViewMovies</button>
+        <input type="text" id="searchInput" data-test-id="search-input" placeholder="Search for movies...">
     </header>
     <main>
         <section id="movieGrid" class="grid">
-            <!-- Movie cards will be dynamically generated here -->
+            <!-- Movie caards will be dynamically generated here -->
         </section>
+        <section id="savedMoviesSection" style="display: none;">
+            <h2>Saved Movies</h2>
+            <div id="savedMovies" class="grid">
+                <!-- Saved movies will be displayed here -->
+            </div>
+        </section>
+        
     </main>
     <footer>
         <p>&copy; 2023 MovieBox</p>
