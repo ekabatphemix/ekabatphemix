@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e6f7ff; /* Light blue background color */
+    background-color: #a0adb3; /* Light blue background color */
     margin: 0;
     padding: 0;
 }
@@ -10,6 +10,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    font-size: 35px;
 }
 
 header h1 {
@@ -38,11 +39,11 @@ main {
     width: 80%;
     font-size: 35px;
     text-emphasis:30px ;
-    background-color: aquamarine;
+    background-color:#a0adb3;
     border-radius: 10px;
+    cursor: pointer;
 
 }
-
 /* Style for movie cards */
 .movie-card {
     border: 1px solid #ddd;
@@ -54,6 +55,8 @@ main {
     box-shadow: rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+
 }
 
 footer {

@@ -50,6 +50,9 @@ function saveMovie(movie) {
         savedMovies.push(movie);
         localStorage.setItem('savedMovies', JSON.stringify(savedMovies));
         displaySavedMovies(); // Update the saved movies display
+
+        // Show a success alert
+        alert('Movie successfully saved. Go to "Saved Movies" to view.');
     } else {
         alert('Movie is already saved.'); // Display a message if the movie is already saved
     }
@@ -98,7 +101,7 @@ function showSavedMovies() {
 
     // Scroll to the saved movies section
     savedMoviesSection.scrollIntoView({ behavior: 'smooth' });
-    
+
     displaySavedMovies(); // Populate and display saved movies
 }
 
@@ -161,7 +164,8 @@ async function fetchTopMovies() {
 function displayMovieDetails(movie) {
     // Create a modal or a separate section to display the details (you can use a library like Bootstrap Modal)
     // Example using an alert for simplicity:
-    alert(`Title: ${movie.title}\nOverview: ${movie.overview}`);
+    const detailsText = `Title: ${movie.title}\nOverview: ${movie.overview}\nDuration: ${movie.duration} minutes`;
+    alert(detailsText);
 }
 
 // Call the fetchTopMovies function to load top movies on page load
